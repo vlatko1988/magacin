@@ -16,7 +16,7 @@ import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
-   List<ItemModel> allItems;
+   //List<ItemModel> allItems;
 
     int AAAAA;
     int bbbbb;
