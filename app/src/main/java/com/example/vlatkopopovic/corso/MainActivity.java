@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
    // List<ItemModel> allItems;
 
 int AAAAA;
+int bbbbb;
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
