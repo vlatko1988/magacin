@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 int AAAAA;
 int bbbbb;
 int kurcina = 40;
+int kurac;
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
