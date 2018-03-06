@@ -17,7 +17,7 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
    // List<ItemModel> allItems;
 
-
+int AAAAA;
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
