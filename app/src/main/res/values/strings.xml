@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Corso</string>
+    <string name="action_settings">Settings</string>
+    <string name="export_pdf">Export PDF</string>
+
+
+
+
+    <string name="itemId">Šifra artikla:</string>
+    <string name="itemName">Naziv artikla:</string>
+    <string name="itemCount">Količina:</string>
+    <string name="itemDate">Poslednja izmena:</string>
+
+    <string name="btnIn">Ulaz</string>
+    <string name="btnOut">Izlaz</string>
+
+</resources>
