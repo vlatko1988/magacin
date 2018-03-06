@@ -12,9 +12,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
-    // List<ItemModel> allItems;
+   List<ItemModel> allItems;
 
     int AAAAA;
     int bbbbb;
