@@ -27,14 +27,14 @@ int bbbbb;
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       /*  fab = findViewById(R.id.fab);
+         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });*/
+        });
 
 
 
@@ -71,7 +71,7 @@ int bbbbb;
         ima.add(im5);*/
         AppDatabase db = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class, "magacin").allowMainThreadQueries().build();
-      //  db.itemDao().insertAll(new ItemModel(001,"Coca Cola", 300, "10.7.2018. 28:56"));
+        db.itemDao().insertAll(new ItemModel(001,"Coca Cola", 300, "10.7.2018. 28:56"));
         RecyclerView.Adapter adapter = new RecyclerViewAdapter(db.itemDao().getAll(),this);
        recyclerView.setAdapter(adapter);
 
