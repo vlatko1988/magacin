@@ -13,15 +13,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-
 public class MainActivity extends AppCompatActivity {
-   // List<ItemModel> allItems;
+    // List<ItemModel> allItems;
 
-int AAAAA;
-int bbbbb;
-int kurcina = 40;
-int kurac;
+    int AAAAA;
+    int bbbbb;
+
     FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +28,7 @@ int kurac;
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-         fab = findViewById(R.id.fab);
+        fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,10 +38,8 @@ int kurac;
         });
 
 
-
-
-       //TEST BEZ BAZE
-         RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        //TEST BEZ BAZE
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         // recyclerView.setNestedScrollingEnabled(false);
@@ -73,9 +70,9 @@ int kurac;
         ima.add(im5);*/
         AppDatabase db = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class, "magacin").allowMainThreadQueries().build();
-        db.itemDao().insertAll(new ItemModel(001,"Coca Cola", 300, "10.7.2018. 28:56"));
-        RecyclerView.Adapter adapter = new RecyclerViewAdapter(db.itemDao().getAll(),this);
-       recyclerView.setAdapter(adapter);
+        db.itemDao().insertAll(new ItemModel(001, "Coca Cola", 300, "10.7.2018. 28:56"));
+        RecyclerView.Adapter adapter = new RecyclerViewAdapter(db.itemDao().getAll(), this);
+        recyclerView.setAdapter(adapter);
 
 
     }
